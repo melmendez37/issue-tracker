@@ -33,7 +33,7 @@ The system allows users to **create and manage issues**, track their status, and
 ---
 
 ## 🗂️ Project Structure
-
+```
 /
 ├── app/issues # Next.js App Router routes
 ├── components/ # Reusable UI components
@@ -41,7 +41,7 @@ The system allows users to **create and manage issues**, track their status, and
 │ ├── schema.prisma # Database schema
 │ └── migrations/ # Prisma migrations
 └── public/ # Static assets
-
+```
 ---
 
 ## Installation
