@@ -42,7 +42,7 @@ const NewIssuePage = () => {
         <Callout.Text>{error}</Callout.Text>
         </Callout.Root>}
       <form  
-        onSubmit={}>
+        onSubmit={onSubmit}>
           <TextField.Root className='mb-5' placeholder='Title' {...register('title')}/>
           <ErrorMessage>{errors.title?.message}</ErrorMessage>
           <Controller 
