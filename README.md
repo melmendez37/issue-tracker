@@ -1,7 +1,7 @@
 # Issue Tracker
 
 A simple and efficient **issue tracking application** built with modern web technologies.  
-The system allows users to **create and manage issues**, track their status, and interact with clean, structured API endpoints.
+The system allows users to **create issues**, and interact with a clean, structured API endpoint.
 
 ---
 
@@ -23,9 +23,9 @@ The system allows users to **create and manage issues**, track their status, and
 
 ## 📌 Features
 
-- Create and manage issues with essential fields  
-- Clean and modern UI for viewing and editing issues  
-- Fully functional CRUD API endpoints  
+- Create issues with essential fields  
+- Clean and modern UI for adding issues  
+- Includes API endpoint for adding issue 
 - Prisma schema for structured database design  
 - API verification using Postman  
 - Database inspection using DataGrip
