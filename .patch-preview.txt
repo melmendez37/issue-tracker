@@ -1,0 +1,7 @@
+Planned edits for app/issues/page.tsx:
+- Wrap the existing table container div with Tailwind classes: add rounded-2xl, bg-gray-100 (or 50), p-3, overflow-hidden so rounded corners clip table.
+- Move the inline border from table to the wrapper (1px solid rgba(0,0,0,0.8)).
+- Keep row dividers as 1px solid rgba(0,0,0,0.6).
+- Make trash button/icon appear red by adding className="text-red-600" to the Button or icon.
+
+This preview file is only an internal note for safety; actual edits follow.
