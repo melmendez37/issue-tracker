@@ -1,0 +1,29 @@
+.CodeMirror {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.dark .CodeMirror {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.editor-preview {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.dark .editor-preview {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.CodeMirror-gutters {
+  background-color: #f3f4f6;
+  border-right: 1px solid #d1d5db;
+}
+
+.dark .CodeMirror-gutters {
+  background-color: #111827;
+  border-right: 1px solid #374151;
+}

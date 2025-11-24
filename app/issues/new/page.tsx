@@ -2,6 +2,7 @@
 
 import { Button, Callout, Spinner, Text, TextField } from '@radix-ui/themes'
 import "easymde/dist/easymde.min.css";
+import "./editor-styles.css";
 import dynamic from 'next/dynamic';
 import { useForm, Controller } from 'react-hook-form';
 import axios from 'axios';
@@ -43,20 +44,19 @@ const NewIssuePage = () => {
         </Callout.Root>}
       <form  
         onSubmit={onSubmit}>
-          <TextField.Root className='mb-5' placeholder='Title' {...register('title')}/>
-          <ErrorMessage>{errors.title?.message}</ErrorMessage>
-          <Controller 
-              name='description'
-              control={control}
-              render={({ field }) => <SimpleMDE placeholder='Description' {...field} />}>
-          </Controller>
-          <ErrorMessage>{errors.description?.message}</ErrorMessage>
+            <TextField.Root className='mb-5 bg-gray-800 text-lg' size="3" placeholder='Title' {...register('title')}/>
+            <ErrorMessage>{errors.title?.message}</ErrorMessage>
+            <Controller 
+                name='description'
+                control={control}
+                render={({ field }) => <SimpleMDE placeholder='Description' {...field} />}>
+            </Controller>
+            <ErrorMessage>{errors.description?.message}</ErrorMessage>
 
-          <Button disabled={isSubmitting}>Submit New Issue{isSubmitting && <Spinner/>}</Button>
-      </form>
-    </div>
-    
-  )
-}
-
-export default NewIssuePage
+            <Button disabled={isSubmitting}>Submit New Issue{isSubmitting && <Spinner/>}</Button>
+        </form>
+      </div>
+    )
+  }
+  
+  export default NewIssuePage
